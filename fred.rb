@@ -1,18 +1,11 @@
-# Class names must be capitalized.  Technically, it's a constant.
 class Fred
+  attr_accessor :occupation, :age
   
-  # The initialize method is the constructor.  The @val is
-  # an object value.
   def initialize(v)
-    @val = v
+    @occupation = v
   end
 
-  # Set it and get it.
-  def set(v)
-    @val = v
-  end
-
-  def get
-    return @val
+  def to_s
+    "Fred is an #{occupation} and #{age} years old."
   end
 end
